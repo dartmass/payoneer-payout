@@ -1,9 +1,9 @@
+// vite.config.js（package.json と同じ階層）
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-const repo = "payoneer-payout";
-
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   plugins: [react()],
-  base: mode === "production" ? `/${repo}/` : "/",
-}));
+  base: "/payoneer-payout/",
+});
+
